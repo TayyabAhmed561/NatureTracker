@@ -13,10 +13,10 @@ __pycache__/
 .pytest_cache/
 
 # Project outputs (regenerate locally)
-nature_tracker/output/
+output/
 
 # Large local inputs / downloaded weights (not for Git)
-nature_tracker/input/
+input/
 *.pt
 
 # OS / editor

@@ -1,7 +1,7 @@
 """
 Stage 6: Dash dashboard for wildlife feeding-station analytics.
 
-Run from the ``nature_tracker`` directory:
+Run from the repository root:
 ``python app.py``
 """
 

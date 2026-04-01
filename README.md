@@ -57,7 +57,7 @@ Video
 
    ```bash
    git clone https://github.com/<your-org>/NatureTracker.git
-   cd NatureTracker/nature_tracker
+   cd NatureTracker
    ```
 
 2. **Create a virtual environment**
@@ -89,12 +89,12 @@ python run_pipeline.py --video path/to/video.mp4 --dry-run
 # Full run
 python run_pipeline.py --video path/to/video.mp4 --yes
 
-# Launch dashboard (from nature_tracker/)
+# Launch dashboard (from repo root)
 python app.py
 # Open http://localhost:8050
 ```
 
-> **Note:** Run pipeline and dashboard commands from the `nature_tracker/` directory so `config.py` paths and imports resolve correctly.
+> **Note:** Run pipeline and dashboard commands from the repository root so `config.py` paths and imports resolve correctly.
 
 ---
 
@@ -119,28 +119,27 @@ python app.py
 ```
 NatureTracker/                    # Git repository root
 ├── render.yaml                   # Render Blueprint (web service)
-└── nature_tracker/
-    ├── app.py                    # Dash dashboard (Stage 6)
-    ├── config.py                 # Central configuration
-    ├── run_pipeline.py           # End-to-end orchestration
-    ├── requirements.txt
-    ├── Procfile                  # Process type for PaaS (e.g. Heroku-style)
-    ├── .env.example
-    ├── pipeline/
-    │   ├── __init__.py
-    │   ├── extract_frames.py     # Stage 1
-    │   ├── detect_animals.py     # Stage 2
-    │   ├── classify_species.py   # Stage 3
-    │   ├── build_sessions.py     # Stage 4
-    │   └── analyze.py            # Stage 5
-    └── output/                   # Generated artifacts (gitignored as needed)
-        ├── frames/
-        ├── detected/
-        ├── data/
-        │   ├── detections.csv
-        │   ├── classifications.csv
-        │   └── sessions.csv
-        └── charts/
+├── Procfile
+├── app.py                        # Dash dashboard (Stage 6)
+├── config.py                     # Central configuration
+├── run_pipeline.py               # End-to-end orchestration
+├── requirements.txt
+├── .env.example
+├── pipeline/
+│   ├── __init__.py
+│   ├── extract_frames.py         # Stage 1
+│   ├── detect_animals.py         # Stage 2
+│   ├── classify_species.py      # Stage 3
+│   ├── build_sessions.py         # Stage 4
+│   └── analyze.py                # Stage 5
+└── output/                       # Generated artifacts (gitignored as needed)
+    ├── frames/
+    ├── detected/
+    ├── data/
+    │   ├── detections.csv
+    │   ├── classifications.csv
+    │   └── sessions.csv
+    └── charts/
 ```
 
 ---
