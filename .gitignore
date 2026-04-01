@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Project outputs (regenerate locally)
+nature_tracker/output/
+
+# Large local inputs / downloaded weights (not for Git)
+nature_tracker/input/
+*.pt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

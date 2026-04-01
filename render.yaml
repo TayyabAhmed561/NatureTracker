@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nature-tracker
+    runtime: python
+    rootDir: nature_tracker
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false

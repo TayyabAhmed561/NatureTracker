@@ -1,0 +1,19 @@
+# Nature Tracker — wildlife camera pipeline
+# PyTorch: install the macOS wheel that supports MPS (Metal) on Apple Silicon.
+# Example: pip install torch torchvision
+# Verify MPS: python -c "import torch; print(torch.backends.mps.is_available())"
+
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+anthropic>=0.18.0
+pandas>=2.0.0
+plotly>=5.18.0
+kaleido>=0.2.1
+dash>=2.14.0
+dash-bootstrap-components>=1.5.0
+tqdm>=4.66.0
+pillow>=10.0.0
+torch>=2.0.0
+jupyter>=1.0.0
+python-dotenv>=1.0.0
+gunicorn>=22.0.0
