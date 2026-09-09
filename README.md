@@ -6,7 +6,7 @@
 ![Dash](https://img.shields.io/badge/Plotly-Dash-teal)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-An automated computer vision pipeline that analyzes 8 hours of wildlife camera footage to identify species, track visits, and generate behavioral insights — built as a proof of concept for the Avia retail analytics platform.
+An automated computer vision pipeline that analyzes 8 hours of wildlife camera footage to identify species, track visits, and generate behavioral insights.
 
 ## 📸 Dashboard Preview
 
@@ -170,11 +170,6 @@ Related: `ANTHROPIC_API_KEY`, `YOLO_MODEL_NAME`, `SPECIES_NORMALIZATION`, and ch
 
 *Figures are approximate; actual spend depends on model, pricing, and frame/detection volume.*
 
----
-
-## 🔗 Connection to Avia
-
-This project mirrors the **shape** of a retail analytics stack: ingest continuous video, detect entities of interest, enrich with a vision LLM, aggregate into time-bounded “sessions,” and surface KPIs in a dashboard. For **Avia**, you would swap the wildlife detector for a **people / shopper** detector, replace the species prompt with **retail behavior** prompts (dwell, queue, engagement), and wire in **Shopify POS** (or similar) for transaction context — reusing the same staged pipeline and dashboard patterns.
 
 ---
 
